@@ -1,0 +1,4 @@
+#Fri Apr 17 15:39:46 CEST 2020
+base.0=/Users/floriangeiser/Documents/Code/Flutter/flutter_finance_app/build/app/intermediates/transforms/r8/release/0/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
