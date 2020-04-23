@@ -10,12 +10,12 @@ class FinancialData{
 
 
   static Future<String> getStockData(stockSymbol) async {
-    //String stockSymbol = "O";
+
     String part1 = "https://www.alphavantage.co/query?function=";
     String stockSeries = "TIME_SERIES_DAILY_ADJUSTED";
     String part4 = "&symbol=";
     String part5 = "&outputsize=full&apikey=";
-    String apiKey = "xxx";   // put aphavantage api key here
+    String apiKey = "XGHP2Y12ZV6IO4LB";   // put alphavantage api key here
 
     String url = part1 + stockSeries + part4 + stockSymbol + part5 + apiKey;
     var response = await http.get(Uri.encodeFull(url), headers: {

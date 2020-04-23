@@ -34,6 +34,7 @@ class _DashboardState extends State<Dashboard> {
   // on Tap Actions
   void _onTapDownAction() {
     setState(() {
+      //change chart
       data1 = [0.0, 0.4, 0.6, -0.3, 0.2, -0.2, 0.0, 0.7];
       elevationValueTileInput = elevationValueHigh;
       elevationValueTileChart = elevationValueHigh;
@@ -48,6 +49,7 @@ class _DashboardState extends State<Dashboard> {
 
   void _onTapTileInput() {
     setState(() {
+      //change chart
       data1 = [-0.4, 0.2, 0.0, 0.6, 0.0, 0.4, 0.3, 0.0];
       elevationValueTileInput = elevationValueLow;
       elevationValueTileChart = elevationValueHigh;
@@ -64,7 +66,9 @@ class _DashboardState extends State<Dashboard> {
 
   void _onTapTileChart() {
     setState(() {
+      //change chart
       data1 = [0.1, -0.2, 0.4, 0.3, 0.0, -0.2, 0.0, 0.4];
+      // button animation
       elevationValueTileInput = elevationValueHigh;
       elevationValueTileChart = elevationValueLow;
       elevationValueTileRevenue = elevationValueHigh;
@@ -73,12 +77,16 @@ class _DashboardState extends State<Dashboard> {
       elevationValueTilePerformance = elevationValueHigh;
       elevationValueTileDividends = elevationValueHigh;
       elevationValueTileDebt = elevationValueHigh;
+      // route
+      Navigator.of(context).pushNamed("/PriceChartPage");
     });
   }
 
   void _onTapTileRevenue() {
     setState(() {
+      //change chart
       data1 = [0.1, -0.4, 0.4, -0.4, 0.2, 0.2, 0.6, -0.4];
+      // button animation
       elevationValueTileInput = elevationValueHigh;
       elevationValueTileChart = elevationValueHigh;
       elevationValueTileRevenue = elevationValueLow;
@@ -87,12 +95,16 @@ class _DashboardState extends State<Dashboard> {
       elevationValueTilePerformance = elevationValueHigh;
       elevationValueTileDividends = elevationValueHigh;
       elevationValueTileDebt = elevationValueHigh;
+      // route
+      Navigator.of(context).pushNamed("/RevenuePage");
     });
   }
 
   void _onTapTileCompetitors() {
     setState(() {
+      //change chart
       data1 = [0.4, -0.2, 0.4, 0.7, 0.2, 0.2, 0.0, -0.4];
+      // button animation
       elevationValueTileInput = elevationValueHigh;
       elevationValueTileChart = elevationValueHigh;
       elevationValueTileRevenue = elevationValueHigh;
@@ -101,12 +113,16 @@ class _DashboardState extends State<Dashboard> {
       elevationValueTilePerformance = elevationValueHigh;
       elevationValueTileDividends = elevationValueHigh;
       elevationValueTileDebt = elevationValueHigh;
+      // route
+      Navigator.of(context).pushNamed("/CompetitorsPage");
     });
   }
 
   void _onTapTileRisk() {
     setState(() {
+      //change chart
       data1 = [-0.4, 0.2, 0.4, -0.7, -0.2, -0.2, 0.6, 0.4];
+      // button animation
       elevationValueTileInput = elevationValueHigh;
       elevationValueTileChart = elevationValueHigh;
       elevationValueTileRevenue = elevationValueHigh;
@@ -115,12 +131,16 @@ class _DashboardState extends State<Dashboard> {
       elevationValueTilePerformance = elevationValueHigh;
       elevationValueTileDividends = elevationValueHigh;
       elevationValueTileDebt = elevationValueHigh;
+      // route
+      Navigator.of(context).pushNamed("/RiskPage");
     });
   }
 
   void _onTapTilePerformance() {
     setState(() {
+      //change chart
       data1 = [0.1, 0.2, -0.4, 0.2, 0.0, 0.2, 0.0, -0.2];
+      // button animation
       elevationValueTileInput = elevationValueHigh;
       elevationValueTileChart = elevationValueHigh;
       elevationValueTileRevenue = elevationValueHigh;
@@ -129,12 +149,16 @@ class _DashboardState extends State<Dashboard> {
       elevationValueTilePerformance = elevationValueLow;
       elevationValueTileDividends = elevationValueHigh;
       elevationValueTileDebt = elevationValueHigh;
+      // route
+      Navigator.of(context).pushNamed("/PerformancePage");
     });
   }
 
   void _onTapTileDividends() {
     setState(() {
+      //change chart
       data1 = [0.0, -0.2, 0.4, 0.3, 0.4, 0.6, 0.5, 0.8];
+      // button animation
       elevationValueTileInput = elevationValueHigh;
       elevationValueTileChart = elevationValueHigh;
       elevationValueTileRevenue = elevationValueHigh;
@@ -143,12 +167,16 @@ class _DashboardState extends State<Dashboard> {
       elevationValueTilePerformance = elevationValueHigh;
       elevationValueTileDividends = elevationValueLow;
       elevationValueTileDebt = elevationValueHigh;
+      // route
+      Navigator.of(context).pushNamed("/DividendsPage");
     });
   }
 
   void _onTapTileDebt() {
     setState(() {
+      //change chart
       data1 = [0.7, -0.2, -0.4, 0.3, -0.4, 0.2, 0.3, -0.8];
+      // button animation
       elevationValueTileInput = elevationValueHigh;
       elevationValueTileChart = elevationValueHigh;
       elevationValueTileRevenue = elevationValueHigh;
@@ -157,6 +185,9 @@ class _DashboardState extends State<Dashboard> {
       elevationValueTilePerformance = elevationValueHigh;
       elevationValueTileDividends = elevationValueHigh;
       elevationValueTileDebt = elevationValueLow;
+      // route
+      Navigator.of(context).pushNamed("/DebtPage");
+
     });
   }
 
