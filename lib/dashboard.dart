@@ -9,7 +9,6 @@ class Dashboard extends StatefulWidget {
 }
 
 class _DashboardState extends State<Dashboard> {
-
   String name = "";
 
   // vectors for graph
@@ -29,7 +28,6 @@ class _DashboardState extends State<Dashboard> {
   var elevationValueTilePerformance = elevationValueHigh;
   var elevationValueTileDividends = elevationValueHigh;
   var elevationValueTileDebt = elevationValueHigh;
-
 
   // on Tap Actions
   void _onTapDownAction() {
@@ -59,9 +57,7 @@ class _DashboardState extends State<Dashboard> {
       elevationValueTilePerformance = elevationValueHigh;
       elevationValueTileDividends = elevationValueHigh;
       elevationValueTileDebt = elevationValueHigh;
-
     });
-
   }
 
   void _onTapTileChart() {
@@ -187,7 +183,6 @@ class _DashboardState extends State<Dashboard> {
       elevationValueTileDebt = elevationValueLow;
       // route
       Navigator.of(context).pushNamed("/DebtPage");
-
     });
   }
 
@@ -564,7 +559,6 @@ class _DashboardState extends State<Dashboard> {
 
   _buildTextBox() {
     return Material(
-
       child: Column(children: <Widget>[
         SizedBox(
           width: 300,
@@ -600,15 +594,15 @@ class _DashboardState extends State<Dashboard> {
         children: <Widget>[
           _buildTileInput(_buildTextBox(), ""),
           _buildTileChart(_buildChart(), "Chart"),
+          _buildTileDividends(
+              _buildIcon(Icons.insert_chart, 0xff44bbf4), "Dividends"),
           _buildTileCompetitors(
               _buildIcon(Icons.table_chart, 0xff44bbf4), "Competitors"),
-          _buildTileRisk(_buildIcon(Icons.bubble_chart, 0xff44bbf4), "Risk"),
           _buildTileRevenue(
               _buildIcon(Icons.data_usage, 0xff44bbf4), "Revenue"),
           _buildTilePerformance(
               _buildIcon(Icons.multiline_chart, 0xff44bbf4), "Performance"),
-          _buildTileDividends(
-              _buildIcon(Icons.insert_chart, 0xff44bbf4), "Dividends"),
+          _buildTileRisk(_buildIcon(Icons.bubble_chart, 0xff44bbf4), "Risk"),
           _buildTileDebt(_buildIcon(Icons.money_off, 0xff44bbf4), "Debt"),
         ],
         staggeredTiles: [
